@@ -1,0 +1,36 @@
+@media screen and (max-width:450px) {
+    .row{
+        flex-wrap: wrap;
+    }
+    footer .row p{
+        width: 100%!important;
+        margin: 10px 0!important;
+    }
+}
+@media screen and (max-width:900px) { 
+    .side-left{
+        /* display: none; */
+    }
+    .side-right{
+        /* display: none; */
+    }
+    .header-side{
+        position: relative;
+        height:auto;
+        width: 100%;
+        display: flex;
+        display: none;
+    }
+    /* .header-side > .item{
+        height: 50px;
+        width: 14%;
+    } */
+}
+@media screen and (max-width:992px) {
+    .search-button{
+        display: none;
+    }
+    .header-side{
+        bottom: 0;
+    }
+}
