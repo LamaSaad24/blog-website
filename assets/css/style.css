@@ -30,11 +30,11 @@
 }
 
 .btn-primary{
-    background-color: var(--primary-hover);
-    border-color: var(--primary-hover);
+    background-color: var(--primary-hover)!important;
+    border-color: var(--primary-hover)!important;
 }
 .btn-primary:hover{
-    background-color: var(--primary);
+    background-color: var(--primary)!important;
     border-color: var(--primary);
 }
 
