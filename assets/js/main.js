@@ -10,6 +10,38 @@ $('.search-button').on('click', '.search-toggle', function(e) {
 
   // change background color 
   $(document).scroll(function () {
-    $("nav").toggleClass('dark', $(this).scrollTop() > $("nav").height());
     $(".go-to-top").toggleClass("show",$(this).scrollTop() > 200)
+  });
+
+
+  // ------------------blog.index-------------
+  $(document).ready(function(){
+    $('.related-section-content').slick({
+      centerMode: true,
+      centerPadding: '60px',
+      slidesToShow: 3,
+      infinite: true,
+      // speed: 600,
+      // autoplay: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: true,
+            centerMode: true,
+            centerPadding: '40px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
   });
