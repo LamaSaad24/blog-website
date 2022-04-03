@@ -14,34 +14,32 @@ $('.search-button').on('click', '.search-toggle', function(e) {
   });
 
 
-  // ------------------blog.index-------------
-  $(document).ready(function(){
-    $('.related-section-content').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 3,
-      infinite: true,
-      // speed: 600,
-      // autoplay: true,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: true,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-  });
+// ------------------blog.index-------------
+$('.related-section-content').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  infinite: true,
+  // speed: 600,
+  // autoplay: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: true,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
